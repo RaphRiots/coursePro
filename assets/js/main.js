@@ -37,7 +37,7 @@
                             setMessage3(value);
                         }
                     }
-
+                    // Validiert das Alter
                     function old(age){
                         let.inputElement    =document.getElementById("bday");
                         let value           =inputElement.value;
@@ -46,6 +46,28 @@
                         }
                         else{
                             return'You must be at least 18 to sign up.'
+                        }
+                    }
+
+                    // Validiert die Strasse
+
+                    // Validiert den Kanton
+
+                    // Validiert die Postleitzahl
+                    function valPlz() {
+                        let inputElement    = document.getElementById("plz");
+                        let value           = inputElement.value;
+
+                        if (!value){
+                            // Beispiele: " ", null, undefined 
+                            setMessage4("Bitte Postleitzahl eingeben.");
+                        }
+                        else if (value < 1000 || value > 9658) { //NOT ( 1000<= n <= 9658})
+                            // Entweder ist die Zahl kleiner als 1 oder grösser als 9658.                   
+                            setMessage4("Entweder ist die Zahl kleiner als 1000 oder grösser als 9658.");
+                        }
+                        else {
+                            setMessage4(value);
                         }
                     }
 
@@ -69,24 +91,17 @@
                         }
                     }
 
-                    // Validiert die Postleitzahl
-                    function valPlz() {
-                        let inputElement    = document.getElementById("plz");
-                        let value           = inputElement.value;
+                    // Validiert das Geschäftlihe Telefon
 
-                        if (!value){
-                            // Beispiele: " ", null, undefined 
-                            setMessage4("Bitte Postleitzahl eingeben.");
-                        }
-                        else if (value < 1000 || value > 9658) { //NOT ( 1000<= n <= 9658})
-                            // Entweder ist die Zahl kleiner als 1 oder grösser als 9658.                   
-                            setMessage4("Entweder ist die Zahl kleiner als 1000 oder grösser als 9658.");
-                        }
-                        else {
-                            setMessage4(value);
-                        }
-                    }
+                    
+                    // Validiert das Geschäftlihe Telefon
 
+
+
+
+
+                    
+                    // Messages
                     function setMessage1(value){
                         document.getElementById("message-1").innerText = value;
                     }

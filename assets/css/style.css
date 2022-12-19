@@ -14,8 +14,8 @@ body {
 
 @font-face {
   font-family: 'cadora_woods_demoregular';
-  src: url('assets/fonts/cadora_woods_demo-webfont.woff2') format('woff2'),
-       url('assets/fonts/cadora_woods_demo-webfont.woff') format('woff');
+  src: url('/assets/fonts/cadora_woods_demo-webfont.woff2') format('woff2'),
+       url('/assets/fonts/cadora_woods_demo-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 
@@ -94,7 +94,7 @@ body {
     rgba(38, 73, 161, 0.75) 75%,
     #326adac2,
     #376dda
-  ), url("assets/img/bottom.png");
+  ), url("/assets/img/bottom.png");
 }
 .layer-2 {
   top: -50px;
@@ -107,22 +107,22 @@ body {
     rgba(38, 73, 161, 0.75) 75%,
     #326adac2,
     #376dda
-  ), url("assets/img/b1.png");
+  ), url("/assets/img/b1.png");
 }
 .layer-3 {
   top: -10px;
   z-index: 15;
-  background-image: url("assets/img/b2.png");
+  background-image: url("/assets/img/b2.png");
 }
 .layer-4 {
   top: 65px;
   z-index: 20;
-  background-image: url("assets/img/b3.png");
+  background-image: url(/assets/img/b3.png");
 }
 .layer-5 {
   top: 150px;
   z-index: 25;
-  background-image: url("assets/img/b4.png");
+  background-image: url("/assets/img/b4.png");
 }
 .layer-6 {
   top: 160px;
@@ -136,7 +136,7 @@ body {
       #222325c2,
       #222325
     ),
-    url("assets/img/b5.png");
+    url("/assets/img/b5.png");
 }
 
 .camp{
@@ -156,16 +156,14 @@ body {
   top: 650px;
   z-index: 30;
   color: #fff;
-  font-size: 2em;
+  font-size: 1rem;
   text-align: center;
   right:0px;
   left: 0px;
   width: 100vw;
-box-shadow: 0px 10px 25px 222325, 0px -20px 5px 222325;
-border: dashed red;
+/* box-shadow: 0px 10px 25px 222325, 0px -20px 5px 222325;
+border: dashed red; */
 }
 
-h1{
-  font-size: 4em;
-}
+
 

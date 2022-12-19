@@ -156,14 +156,16 @@ body {
   top: 650px;
   z-index: 30;
   color: #fff;
-  font-size: 1rem;
+  font-size: 2em;
   text-align: center;
   right:0px;
   left: 0px;
   width: 100vw;
-/* box-shadow: 0px 10px 25px 222325, 0px -20px 5px 222325;
-border: dashed red; */
+box-shadow: 0px 10px 25px 222325, 0px -20px 5px 222325;
+border: dashed red;
 }
 
-
+h1{
+  font-size: 4em;
+}
 

@@ -5,54 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paralax Example</title>
+    <script type = "text/javascript" src="assets/js/main.js"></script>  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <!-- NAVBAR TOP -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container-fluid">
-          <div class="navbar-brand" href="#">
-              <img src="assets/img/babel.png" alt="Bootstrap" width="150" height="125">
+    <nav class="navbar navbar-expand-lg fixed-top ">
+      <div class="container-fluid" >
+          <div class="navbar-brand" href="index.html">
+              <img src="assets/img/babel.png" alt="Camping" width="150" height="125">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
               </button>
           </div>
-          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <div class="navi collapse  navbar-collapse text-success" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  <a class="nav-link active text-success" aria-current="page" href="index.html">
+                    <h5>Home</h5>
+                  </a>
                   </li>
                   <li class="nav-item">
-                  <a class="nav-link" href="register.html">Register</a>
+                  <a class="nav-link text-success" href="register.html">
+                    <h4>Register</h4>
+                  </a>
                   </li>
                   <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Reisen
-                  </a>
-                  <ul class="dropdown-menu">
+                    <a class="nav-link dropdown-toggle text-success" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <h5>Reisen</h5>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <li><a class="dropdown-item" href="#">Action</a></li>
                       <li><a class="dropdown-item" href="#">Another action</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link disabled">Disabled</a>
+                    </ul>
                   </li>
               </ul>
               <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn" type="submit">Search</button>
+                  <input class="form-control me-2 " type="search" placeholder="Suchen" aria-label="Search">
+                  <button class="btn" type="submit">Suchen</button>
               </form>
           </div>
       </div>
     </nav>
     <!-- NAV TOP END -->
     <!-- PARALLAX -->
-    <div class="sky"></div>
+    
     <div class="parallax-container">
         <div class="parallax-layer layer-0" data-parallax-speed="0.05" data-max-scroll="565"></div>
         <div class="parallax-layer layer-1" data-parallax-speed="0.1" data-max-scroll="565"></div>
@@ -62,14 +64,100 @@
         <div class="parallax-layer layer-5" data-parallax-speed="0.8" data-max-scroll="565"></div>
         <div class="parallax-layer layer-6" data-parallax-speed="0.9" data-max-scroll="565"></div>
       </div>
-    <!-- CONTENT -->
-      <div class="content">
-        <h1>This is parallax.</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos repellendus dicta tempore cum natus deserunt. Quibusdam ipsum eius magnam officiis? A id modi doloribus magni, aliquid qui libero voluptatem blanditiis.</p>
-      </div>
-    <!-- CONTENT END -->
       <script src="assets/js/parallax.js"></script>
     <!-- PARALLAX END -->
+    <!-- CONTENT -->
+    <div class="sky"></div>
+      <div class="content">
+        <div class="row mx-2">
+          <div class="col-sm-3 col-lg-2"></div>
+          <div class="col-sm-6 col-lg-8 camp">        
+            <h1>PersonaliIen:</h1>
+          </div>
+          <div class="col-sm-3 col-lg-2"></div>
+        </div>
+
+        <div class="row info m-2 justifty-content-center">
+          <div class="col-4 col-sm-4">
+            <label for  ="gender">Anrede:</label><br>
+            <select id="gender" required="required">
+                <option value="" selected disabled hidden>- Auswahl -</option>
+                <option value="Mann">Mann</option>
+                <option value="Frau">Frau</option>
+                <option value="Non-Bin">Non-Binär</option>
+            </select> *<br>
+
+            <label for  ="firm">Firma:</label><br>
+            <input type ="text"     id="firm"   name="firm"  placeholder="Global Corp."  ><br><br>
+
+            <label for  ="vName">Vorname:</label><br>
+            <input type ="text"     id="vName"  name="vName" placeholder="Rio" required> *<br>        
+            
+            <label for  ="nName">Nachname:</label><br>
+            <input type ="text"     id="nName"  name="nName" placeholder="Burbi"  required> *<br>
+
+            <label for  ="bday">Geburtsdatum:</label><br>
+            <input type ="date"     id="bday"   name="bday"  required min=""> *<br>          </div>
+          
+          <div class="col-4 col-sm-4">                        
+            <label for  ="nName">Strasse:</label><br>
+            <input type ="text"     id="street" name="street"placeholder="YoMama Strasse"  required> *<br>
+
+            <label for  ="plz"> PLZ:</label><br>
+            <input type ="number"   id="plz"    name="plz"  min="1000" max="9658" placeholder="8000" required> *<br>
+
+            <label for  ="ort">Kanton:</label><br>
+            <select id="ort" required="required">
+                <option value="" selected disabled hidden>- Auswahl -</option>
+                <option value="Aargau">Aargau</option>
+                <option value="Appenzell Ausserrhoden">Appenzell Ausserrhoden</option>
+                <option value="Appenzell Innerrhoden">Appenzell Innerrhoden</option>
+                <option value="Basel-Landschaft">Basel-Landschaft</option>
+                <option value="Basel-Stadt">Basel-Stadt</option>
+                <option value="Bern">Bern</option>
+                <option value="Freiburg">Freiburg</option>
+                <option value="Genf">Genf</option>
+                <option value="Glarus">Glarus</option>
+                <option value="Graubünden">Graubünden</option>
+                <option value="Jura">Jura</option>
+                <option value="Luzern">Luzern</option>
+                <option value="Neuenburg">Neuenburg</option>
+                <option value="Nidwalden">Nidwalden</option>
+                <option value="Obwalden">Obwalden</option>
+                <option value="St.Gallen">St.Gallen</option>
+                <option value="Schaffhausen">Schaffhausen</option>
+                <option value="Schwyz">Schwyz</option>
+                <option value="Solothurn">Solothurn</option>
+                <option value="Tessin">Tessin</option>
+                <option value="Thurgau">Thurgau</option>
+                <option value="Uri">Uri</option>
+                <option value="Waadt">Waadt</option>
+                <option value="Wallis">Wallis</option>
+                <option value="Zürich">Zürich</option>
+                <option value="Zug">Zug</option>
+            </select> *<br>
+          </div>
+
+          <div class="col-4 col-sm-4">
+            <label for  ="email">E-Mail:</label><br>
+            <input type ="email"    id="email"  name="email" placeholder="MayMusterFrau@zuerich.ch" required> *<br>
+
+            <label for  ="telG"> Telefon Geschäftlich:</label><br>
+            <input type ="tel"   id="telG"     name="telG" placeholder="043 666 69 69" pattern="+41[0-9]{3}-[0-9]{2}-[0-9]{2}"><br>
+
+            <label for  ="telP"> Telefon Privat:</label><br>
+            <input type ="number"   id="telP"     name="telP" placeholder="076 666 69 69" > *<br>
+
+
+            <label for  ="comment"> Bemerkungen:</label><br>
+            <textarea id="comment" name="comment" rows="5" cols="30"  placeholder="Weitere Bemerkungen?"></textarea><br>
+          </div>
+        </div>
+        <button onclick= " valGender();valVorName(); valNachName(); valEmail(); valPlz()" type="submit" form="form1" value="Submit">Validieren</button> 
+        <input type="Reset">
+      </div>
+    <!-- CONTENT END -->
+
 
     
     <!-- FOOTER -->
@@ -131,7 +219,7 @@
         <section>
           <div class="row d-flex justify-content-center">
             <div class="col-lg-8">
-              <p> Have a nice Trip</p>
+              <h3>Hava a nice Trip!</h3>
             </div>
           </div>
         </section>

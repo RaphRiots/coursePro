@@ -5,54 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paralax Example</title>
+    <script type = "text/javascript" src="assets/js/main.js"></script>  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
     <!-- NAVBAR TOP -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container-fluid">
-          <div class="navbar-brand" href="#">
-              <img src="assets/img/babel.png" alt="Bootstrap" width="150" height="125">
+    <nav class="navbar navbar-expand-lg fixed-top ">
+      <div class="container-fluid" >
+          <div class="navbar-brand" href="index.html">
+              <img src="assets/img/babel.png" alt="Camping" width="150" height="125">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
               </button>
           </div>
-          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <div class="navi collapse  navbar-collapse text-success" id="navbarSupportedContent">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link active text-success" aria-current="page" href="index.html">
+                    <h5>Home</h5>
+                  </a>
                   </li>
                   <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link text-success" href="register.html">
+                    <h4>Register</h4>
+                  </a>
                   </li>
                   <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                  </a>
-                  <ul class="dropdown-menu">
+                    <a class="nav-link dropdown-toggle text-success" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <h5>Reisen</h5>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <li><a class="dropdown-item" href="#">Action</a></li>
                       <li><a class="dropdown-item" href="#">Another action</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  </ul>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link disabled">Disabled</a>
+                    </ul>
                   </li>
               </ul>
               <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn" type="submit">Search</button>
+                  <input class="form-control me-2 " type="search" placeholder="Suchen" aria-label="Search">
+                  <button class="btn" type="submit">Suchen</button>
               </form>
           </div>
       </div>
     </nav>
     <!-- NAV TOP END -->
     <!-- PARALLAX -->
-    <div class="sky"></div>
+    
     <div class="parallax-container">
         <div class="parallax-layer layer-0" data-parallax-speed="0.05" data-max-scroll="565"></div>
         <div class="parallax-layer layer-1" data-parallax-speed="0.1" data-max-scroll="565"></div>
@@ -62,14 +64,29 @@
         <div class="parallax-layer layer-5" data-parallax-speed="0.8" data-max-scroll="565"></div>
         <div class="parallax-layer layer-6" data-parallax-speed="0.9" data-max-scroll="565"></div>
       </div>
-    <!-- CONTENT -->
-      <div class="content">
-        <h1>This is parallax.</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos repellendus dicta tempore cum natus deserunt. Quibusdam ipsum eius magnam officiis? A id modi doloribus magni, aliquid qui libero voluptatem blanditiis.</p>
-      </div>
-    <!-- CONTENT END -->
       <script src="assets/js/parallax.js"></script>
     <!-- PARALLAX END -->
+    <!-- CONTENT -->
+    <div class="sky"></div>
+      <div class="content">
+        <div class="row mx-2">
+          <div class="col-sm-3 col-lg-2"></div>
+          <div class="col-sm-6 col-lg-8 camp">        
+            <h1>Camping bis zum Umfallen!</h1>
+          </div>
+          <div class="col-sm-3 col-lg-2"></div>
+        </div>
+
+        <div class="row info m-2">
+          <div class="col-6 col-sm-4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos repellendus dicta tempore cum natus deserunt. Quibusdam ipsum eius magnam officiis? A id modi doloribus magni, aliquid qui libero voluptatem blanditiis.</p>
+          </div>
+          <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+          <div class="col-6 col-sm-4">.col-6 .col-sm-4</div>
+        </div>
+      </div>
+    <!-- CONTENT END -->
+
 
     
     <!-- FOOTER -->
